@@ -1,0 +1,94 @@
+:root {
+  /* BMW-Inspired Color Palette */
+  --color-metallic-silver: #C0C0C0;
+  --color-deep-blue: #1E3A8A;
+  --color-sharp-red: #DC2626;
+  --color-dark-bg: #0A0A0A;
+  --color-darker-bg: #050505;
+  --color-light-silver: #E5E5E5;
+  --color-accent-blue: #2563EB;
+  --color-gradient-start: #0A0A0A;
+  --color-gradient-end: #1E3A8A;
+  
+  /* Typography */
+  --font-heading: 'Cinzel', serif;
+  --font-code: 'JetBrains Mono', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-code);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-dark-bg);
+  color: var(--color-light-silver);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-metallic-silver);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sharp-red);
+}
+
+/* Geometric Grid Pattern */
+.grid-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: 
+    linear-gradient(var(--color-metallic-silver) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-metallic-silver) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}

@@ -1,0 +1,157 @@
+.bmw-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bmw-car {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  width: 800px;
+  height: 300px;
+  opacity: 0.15;
+  filter: drop-shadow(0 0 30px var(--color-accent-blue));
+}
+
+.bmw-car svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Animated light beams from car headlights */
+.light-beam {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 500px;
+  height: 150px;
+  background: linear-gradient(90deg, 
+    rgba(37, 99, 235, 0.3) 0%, 
+    rgba(37, 99, 235, 0.1) 50%,
+    transparent 100%
+  );
+  transform: translateY(-50%) skewY(-5deg);
+  opacity: 0;
+  animation: lightBeam 8s ease-in-out infinite;
+  filter: blur(20px);
+}
+
+@keyframes lightBeam {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-50%) skewY(-5deg) scaleX(0.5);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(-50%) skewY(-5deg) scaleX(1);
+  }
+}
+
+/* Speedometer effect */
+.speedometer {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--color-metallic-silver);
+  border-radius: 50%;
+  opacity: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.speedometer::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2px solid var(--color-sharp-red);
+  border-radius: 50%;
+}
+
+.speedometer-needle {
+  position: absolute;
+  width: 3px;
+  height: 40%;
+  background: var(--color-sharp-red);
+  transform-origin: bottom center;
+  animation: needleRotate 4s ease-in-out infinite;
+  box-shadow: 0 0 10px var(--color-sharp-red);
+}
+
+@keyframes needleRotate {
+  0%, 100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+}
+
+/* Road lines */
+.road-line {
+  position: absolute;
+  bottom: 30%;
+  left: -10%;
+  width: 120%;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-metallic-silver) 0px,
+    var(--color-metallic-silver) 50px,
+    transparent 50px,
+    transparent 100px
+  );
+  opacity: 0.1;
+  animation: roadMove 3s linear infinite;
+}
+
+@keyframes roadMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bmw-car {
+    width: 400px;
+    height: 150px;
+  }
+  
+  .speedometer {
+    width: 120px;
+    height: 120px;
+    bottom: 5%;
+    right: 5%;
+  }
+  
+  .light-beam {
+    width: 300px;
+    height: 100px;
+  }
+}

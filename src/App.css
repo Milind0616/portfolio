@@ -1,0 +1,57 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
+  padding-top: 70px;
+}
+
+/* Section Styling */
+.section {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  scroll-margin-top: 90px;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-metallic-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-sharp-red), var(--color-accent-blue));
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: auto;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
