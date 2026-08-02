@@ -23,7 +23,7 @@ A stunning, automotive luxury-inspired portfolio website built with **React** an
 - 🚗 **BMW M4 Background** - Real car image with parallax scrolling and dynamic zoom effects
 - ✨ **Framer Motion Animations** - Smooth, staggered page transitions with spring physics
 - 🎨 **Premium Design System** - Metallic silver (#C0C0C0), deep blue (#1E3A8A), and sharp red (#DC2626)
-- 🔤 **Distinctive Typography** - Cinzel (luxury headings) + JetBrains Mono (technical elements)
+- 🔤 **Distinctive Typography** - JetBrains Mono (all typography)
 - 📱 **Fully Responsive** - Optimized for all devices from mobile to 4K displays
 - ⚡ **Performance Optimized** - GPU-accelerated animations and lazy loading
 
@@ -207,7 +207,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - BMW M4 inspiration for design theme
 - [Framer Motion](https://www.framer.com/motion/) for animation library
 - [Web3Forms](https://web3forms.com/) for contact form API
-- [Google Fonts](https://fonts.google.com/) for Cinzel & JetBrains Mono
+- [Google Fonts](https://fonts.google.com/) for JetBrains Mono
 
 ---
 

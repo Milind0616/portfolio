@@ -197,7 +197,7 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <motion.a
-            href="https://www.linkedin.com/in/mlind-randive-2a393289"
+            href="https://www.linkedin.com/in/milind-randive-2a3932299"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -207,7 +207,7 @@ const Contact = () => {
             💼
           </motion.a>
           <motion.a
-            href="https://github.com/Milind0916"
+            href="https://github.com/milind0616"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -217,15 +217,15 @@ const Contact = () => {
             💻
           </motion.a>
           <motion.a
-            href="mailto:randivemlind@gmail.com"
+            href="mailto:randivemilind1@gmail.com"
             className="social-link"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             ✉️
           </motion.a>
-          <motion.a
-            href="https://www.nullclass.com/"
+          {/* <motion.a
+            href="https://www.milind0616.github/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -233,7 +233,7 @@ const Contact = () => {
             whileTap={{ scale: 0.9 }}
           >
             🌐
-          </motion.a>
+          </motion.a> */}
         </motion.div>
 
         {/* Footer */}
