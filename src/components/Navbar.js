@@ -16,14 +16,25 @@ const Navbar = ({ darkMode, onToggleTheme }) => {
           <a href="#contact" className="navbar-link">Contact</a>
         </div>
 
-        <button
-          type="button"
-          className="theme-toggle"
-          onClick={onToggleTheme}
-          aria-label="Toggle dark and light mode"
-        >
-          {darkMode ? 'Light' : 'Dark'}
-        </button>
+        <div className="navbar-actions">
+          <a
+            href="/Milind_Randive_Resume.pdf"
+            className="resume-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={onToggleTheme}
+            aria-label="Toggle dark and light mode"
+          >
+            {darkMode ? 'Light' : 'Dark'}
+          </button>
+        </div>
       </div>
     </nav>
   );
