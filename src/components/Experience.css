@@ -1,5 +1,5 @@
 .experience {
-  background: rgba(10, 10, 10, 0.95);
+  background: var(--section-bg);
   position: relative;
 }
 
@@ -65,8 +65,8 @@
   position: relative;
   margin-bottom: var(--spacing-lg);
   padding: var(--spacing-md);
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(10, 10, 10, 0.5));
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--section-card-bg);
+  border: 2px solid var(--section-panel-border);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
@@ -111,7 +111,7 @@
 .timeline-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--color-metallic-silver);
+  color: var(--section-text);
   margin-bottom: var(--spacing-xs);
   font-weight: 700;
 }
@@ -127,7 +127,7 @@
 .timeline-description {
   font-family: var(--font-code);
   font-size: 0.9rem;
-  color: var(--color-light-silver);
+  color: var(--section-text);
   line-height: 1.7;
   opacity: 0.9;
 }

@@ -1,5 +1,5 @@
 .contact {
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.95), rgba(5, 5, 5, 1));
+  background: var(--contact-bg);
   position: relative;
   min-height: 100vh;
 }
@@ -30,7 +30,7 @@
 .contact-text {
   font-family: var(--font-code);
   font-size: 1.1rem;
-  color: var(--color-light-silver);
+  color: var(--contact-text);
   line-height: 1.8;
   margin-bottom: var(--spacing-lg);
   opacity: 0.9;
@@ -47,8 +47,8 @@
   align-items: center;
   gap: var(--spacing-md);
   padding: var(--spacing-md);
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(10, 10, 10, 0.5));
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--contact-card-bg);
+  border: 2px solid var(--contact-panel-border);
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -57,7 +57,7 @@
 .contact-item:hover {
   border-color: var(--color-sharp-red);
   transform: translateX(10px);
-  box-shadow: -10px 10px 30px rgba(220, 38, 38, 0.3);
+  box-shadow: -10px 10px 30px rgba(220, 38, 38, 0.2);
 }
 
 .contact-icon {
@@ -79,25 +79,25 @@
 .contact-item-label {
   font-family: var(--font-code);
   font-size: 0.75rem;
-  color: var(--color-metallic-silver);
+  color: var(--contact-muted);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 0.3rem;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .contact-item-value {
   font-family: var(--font-heading);
   font-size: 1.1rem;
-  color: var(--color-light-silver);
+  color: var(--contact-text);
   font-weight: 600;
   word-break: break-all;
 }
 
 /* Contact Form */
 .contact-form {
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(10, 10, 10, 0.5));
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--contact-card-bg);
+  border: 2px solid var(--contact-panel-border);
   border-radius: 15px;
   padding: var(--spacing-lg);
   position: relative;
@@ -123,7 +123,7 @@
   display: block;
   font-family: var(--font-code);
   font-size: 0.85rem;
-  color: var(--color-metallic-silver);
+  color: var(--contact-muted);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: var(--spacing-xs);
@@ -134,10 +134,10 @@
 .form-textarea {
   width: 100%;
   padding: 1rem;
-  background: rgba(10, 10, 10, 0.7);
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--contact-input-bg);
+  border: 2px solid var(--contact-input-border);
   border-radius: 8px;
-  color: var(--color-light-silver);
+  color: var(--contact-input-text);
   font-family: var(--font-code);
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -147,8 +147,8 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-sharp-red);
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
-  background: rgba(10, 10, 10, 0.9);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
+  background: var(--contact-input-bg);
 }
 
 .form-textarea {
@@ -208,14 +208,14 @@
   width: 50px;
   height: 50px;
   background: transparent;
-  border: 2px solid var(--color-metallic-silver);
+  border: 2px solid var(--contact-panel-border);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   transition: all 0.3s ease;
-  color: var(--color-metallic-silver);
+  color: var(--contact-text);
 }
 
 .social-link:hover {
@@ -231,14 +231,14 @@
   text-align: center;
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(192, 192, 192, 0.2);
+  border-top: 1px solid var(--contact-panel-border);
 }
 
 .footer-text {
   font-family: var(--font-code);
   font-size: 0.9rem;
-  color: var(--color-metallic-silver);
-  opacity: 0.6;
+  color: var(--contact-muted);
+  opacity: 0.85;
 }
 
 .footer-text span {

@@ -1,8 +1,78 @@
 .App {
+  --color-metallic-silver: #dfe7f2;
+  --color-deep-blue: #6aa6ff;
+  --color-sharp-red: #ff5c6c;
+  --color-dark-bg: #0b0f17;
+  --color-darker-bg: #0d1523;
+  --color-light-silver: #f4f7fb;
+  --color-accent-blue: #6aa6ff;
+  --color-gradient-start: #0b0f17;
+  --color-gradient-end: #111b2d;
+  --nav-bg: rgba(9, 14, 22, 0.82);
+  --nav-text: #f8fafc;
+  --nav-link: #e2e8f0;
+  --nav-border: rgba(148, 163, 184, 0.25);
+  --button-bg: rgba(148, 163, 184, 0.12);
+  --button-text: #f8fafc;
+  --button-border: rgba(148, 163, 184, 0.28);
+  --section-bg: rgba(11, 15, 23, 0.88);
+  --section-card-bg: linear-gradient(135deg, rgba(106, 166, 255, 0.12), rgba(11, 15, 23, 0.82));
+  --section-panel-border: rgba(223, 231, 242, 0.2);
+  --section-soft-border: rgba(223, 231, 242, 0.15);
+  --section-text: #f4f7fb;
+  --section-muted: rgba(223, 231, 242, 0.8);
+  --section-input-bg: rgba(11, 15, 23, 0.72);
+  --section-input-text: #f4f7fb;
+  --section-input-border: rgba(223, 231, 242, 0.25);
+  --contact-bg: linear-gradient(180deg, rgba(11, 15, 23, 0.96), rgba(13, 21, 35, 1));
+  --contact-card-bg: linear-gradient(135deg, rgba(106, 166, 255, 0.14), rgba(11, 15, 23, 0.7));
+  --contact-panel-border: rgba(223, 231, 242, 0.2);
+  --contact-text: #f4f7fb;
+  --contact-muted: rgba(223, 231, 242, 0.8);
+  --contact-input-bg: rgba(11, 15, 23, 0.7);
+  --contact-input-text: #f4f7fb;
+  --contact-input-border: rgba(223, 231, 242, 0.28);
   position: relative;
   min-height: 100vh;
   background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
   padding-top: 70px;
+  color: var(--color-light-silver);
+}
+
+.App.theme-light {
+  --color-metallic-silver: #334155;
+  --color-deep-blue: #2563eb;
+  --color-sharp-red: #e11d48;
+  --color-dark-bg: #f5f7fb;
+  --color-darker-bg: #edf2ff;
+  --color-light-silver: #0f172a;
+  --color-accent-blue: #2563eb;
+  --color-gradient-start: #f8fafc;
+  --color-gradient-end: #ecf3ff;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-text: #0f172a;
+  --nav-link: #1f2937;
+  --nav-border: rgba(15, 23, 42, 0.14);
+  --button-bg: rgba(15, 23, 42, 0.05);
+  --button-text: #0f172a;
+  --button-border: rgba(15, 23, 42, 0.18);
+  --section-bg: rgba(255, 255, 255, 0.32);
+  --section-card-bg: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.8));
+  --section-panel-border: rgba(15, 23, 42, 0.12);
+  --section-soft-border: rgba(15, 23, 42, 0.08);
+  --section-text: #0f172a;
+  --section-muted: #475569;
+  --section-input-bg: rgba(255, 255, 255, 0.82);
+  --section-input-text: #0f172a;
+  --section-input-border: rgba(15, 23, 42, 0.12);
+  --contact-bg: linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(236, 243, 255, 1));
+  --contact-card-bg: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.72));
+  --contact-panel-border: rgba(15, 23, 42, 0.12);
+  --contact-text: #0f172a;
+  --contact-muted: #475569;
+  --contact-input-bg: rgba(255, 255, 255, 0.82);
+  --contact-input-text: #0f172a;
+  --contact-input-border: rgba(15, 23, 42, 0.14);
 }
 
 /* Section Styling */

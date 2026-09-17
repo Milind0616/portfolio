@@ -1,5 +1,5 @@
 .projects {
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.9), rgba(30, 58, 138, 0.2));
+  background: var(--section-bg);
   position: relative;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(10, 10, 10, 0.8));
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--section-card-bg);
+  border: 2px solid var(--section-panel-border);
   border-radius: 15px;
   padding: var(--spacing-md);
   position: relative;
@@ -116,7 +116,7 @@
 .project-title {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  color: var(--color-metallic-silver);
+  color: var(--section-text);
   margin-bottom: var(--spacing-sm);
   font-weight: 700;
   text-transform: uppercase;
@@ -126,7 +126,7 @@
 .project-description {
   font-family: var(--font-code);
   font-size: 0.9rem;
-  color: var(--color-light-silver);
+  color: var(--section-text);
   line-height: 1.7;
   margin-bottom: var(--spacing-md);
   opacity: 0.9;

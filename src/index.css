@@ -1,15 +1,15 @@
 :root {
   /* BMW-Inspired Color Palette */
-  --color-metallic-silver: #C0C0C0;
-  --color-deep-blue: #1E3A8A;
-  --color-sharp-red: #DC2626;
-  --color-dark-bg: #0A0A0A;
-  --color-darker-bg: #050505;
-  --color-light-silver: #E5E5E5;
-  --color-accent-blue: #2563EB;
-  --color-gradient-start: #0A0A0A;
-  --color-gradient-end: #1E3A8A;
-  
+  --color-metallic-silver: #dfe7f2;
+  --color-deep-blue: #6aa6ff;
+  --color-sharp-red: #ff5c6c;
+  --color-dark-bg: #0b0f17;
+  --color-darker-bg: #0d1523;
+  --color-light-silver: #f4f7fb;
+  --color-accent-blue: #6aa6ff;
+  --color-gradient-start: #0b0f17;
+  --color-gradient-end: #111b2d;
+
   /* Typography */
   --font-heading: 'JetBrains Mono', monospace;
   --font-code: 'JetBrains Mono', monospace;

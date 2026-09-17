@@ -1,5 +1,5 @@
 .skills {
-  background: rgba(10, 10, 10, 0.8);
+  background: var(--section-bg);
   backdrop-filter: blur(10px);
 }
 
@@ -21,8 +21,8 @@
 }
 
 .skill-gear {
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(10, 10, 10, 0.5));
-  border: 2px solid var(--color-metallic-silver);
+  background: var(--section-card-bg);
+  border: 2px solid var(--section-panel-border);
   border-radius: 10px;
   padding: var(--spacing-md);
   position: relative;
@@ -79,7 +79,7 @@
 .skill-gear-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--color-metallic-silver);
+  color: var(--section-text);
   margin-bottom: var(--spacing-sm);
   font-weight: 700;
   text-transform: uppercase;
@@ -89,7 +89,7 @@
 .skill-gear-description {
   font-family: var(--font-code);
   font-size: 0.85rem;
-  color: var(--color-light-silver);
+  color: var(--section-text);
   margin-bottom: var(--spacing-md);
   line-height: 1.6;
   opacity: 0.8;
@@ -125,7 +125,7 @@
 .performance-meter {
   margin-top: var(--spacing-lg);
   padding: var(--spacing-md);
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.2), rgba(10, 10, 10, 0.4));
+  background: var(--section-card-bg);
   border: 2px solid var(--color-accent-blue);
   border-radius: 10px;
   text-align: center;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import BMWBackground from './components/BMWBackground';
 import Navbar from './components/Navbar';
@@ -9,11 +9,13 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'theme-dark' : 'theme-light'}`}>
       <div className="grid-pattern"></div>
       <BMWBackground />
-      <Navbar />
+      <Navbar darkMode={darkMode} onToggleTheme={() => setDarkMode((prev) => !prev)} />
       <Hero />
       <Skills />
       <Projects />
