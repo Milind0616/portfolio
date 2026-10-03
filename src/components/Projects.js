@@ -24,16 +24,6 @@ const ProjectCardContent = ({ project }) => (
             ⚡
           </motion.button>
         </a>
-        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-          <motion.button
-            className="project-link"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            title="Live Demo"
-          >
-            🔗
-          </motion.button>
-        </a>
       </div>
     </div>
 
@@ -44,17 +34,6 @@ const ProjectCardContent = ({ project }) => (
       {project.tech.map((tech, idx) => (
         <span key={idx} className="tech-badge">{tech}</span>
       ))}
-    </div>
-
-    <div className="project-stats">
-      <div className="project-stat">
-        <span className="project-stat-value">{project.stats.speed}</span>
-        <span className="project-stat-label">Performance</span>
-      </div>
-      <div className="project-stat">
-        <span className="project-stat-value">{project.stats.complexity}</span>
-        <span className="project-stat-label">Complexity</span>
-      </div>
     </div>
   </>
 );
@@ -170,8 +149,8 @@ const Projects = () => {
       description: "Personal portfolio website showcasing projects with animations and engaging user experience. Features BMW-themed design with automotive luxury aesthetics.",
       tech: ["React", "Framer Motion", "CSS3"],
       icon: "🚗",
-      github: "https://www.linkedin.com/in/mlind-randive-2a393289",
-      demo: "https://www.nullclass.com/",
+      github: "https://portfolio-azure-zeta-vx8ggle1w9.vercel.app/#contact",
+      demo: "https://portfolio-azure-zeta-vx8ggle1w9.vercel.app/#contact",
       stats: { speed: "Blazing", complexity: "Medium" }
     }
   ];
@@ -183,8 +162,8 @@ const Projects = () => {
       description: "Modern food delivery website with a sleek design and seamless user experience. Features BMW-themed design with automotive luxury aesthetics.",
       tech: ["React", "Framer Motion", "CSS3"],
       icon: "🍔",
-      github: "https://www.linkedin.com/in/mlind-randive-2a393289",
-      demo: "https://www.nullclass.com/",
+      github: "https://foodwebsite-e1ln.vercel.app/",
+      demo: "https://foodwebsite-e1ln.vercel.app/",
       stats: { speed: "Blazing", complexity: "Medium" }
     },
     {
@@ -192,17 +171,17 @@ const Projects = () => {
       description: "A portfolio website for Graphura, showcasing their projects and services with a modern design and interactive elements.",
       tech: ["React", "Framer Motion", "CSS3"],
       icon: "🎨",
-      github: "https://www.linkedin.com/in/mlind-randive-2a393289",
+      github: "https://github.com/mygraphura/GraphuraPortfoilo.git",
       demo: "https://www.nullclass.com/",
       stats: { speed: "Blazing", complexity: "Medium" }
     },
     {
-      title: "Graphura Task Management System",
-      description: "A task management system for Graphura, enabling efficient project tracking and collaboration.",
+      title: "Hoora.in website for Jaipur client",
+      description: "A website developed for a Jaipur-based client, Hoora.in, providing an online platform for their services with a user-friendly interface and responsive design.",
       tech: ["React", "Framer Motion", "CSS3"],
       icon: "📋",
-      github: "https://www.linkedin.com/in/mlind-randive-2a393289",
-      demo: "https://www.nullclass.com/",
+      github: "https://github.com/SiddhiMalwadkar/Hoora.git",
+      demo: "https://github.com/SiddhiMalwadkar/Hoora.git",
       stats: { speed: "Blazing", complexity: "Medium" }
     },
     {
@@ -210,8 +189,8 @@ const Projects = () => {
       description: "A business document verification portal built with Flutter, providing a secure and efficient way to verify business documents.",
       tech: ["React", "Framer Motion", "CSS3"],
       icon: "📄",
-      github: "https://www.linkedin.com/in/mlind-randive-2a393289",
-      demo: "https://www.nullclass.com/",
+      github: "https://github.com/Milind0616/servicegroupD.git",
+      demo: "https://github.com/Milind0616/servicegroupD.git",
       stats: { speed: "Blazing", complexity: "Medium" }
     }
   ];

@@ -78,13 +78,14 @@
 /* Section Styling */
 .section {
   position: relative;
-  min-height: 100vh;
-  padding: var(--spacing-xl) var(--spacing-md);
+  min-height: 110vh;
+  padding: 8rem var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   scroll-margin-top: 90px;
+  scroll-snap-align: start;
 }
 
 .section-title {
@@ -117,7 +118,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .section {
-    padding: var(--spacing-lg) var(--spacing-sm);
+    padding: 6rem var(--spacing-sm);
     min-height: auto;
   }
   
